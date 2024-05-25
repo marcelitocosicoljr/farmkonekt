@@ -9,7 +9,7 @@ const Greetings = () => {
           Hello, Welcome back John!
         </p>
         <p className="text-[16px]  text-fk-grey  font-light">
-          Let's make the most of your day with <br /> Farmkonekt online
+          Let{"'"}s make the most of your day with <br /> Farmkonekt online
           services!
         </p>
       </div>
