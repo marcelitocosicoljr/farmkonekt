@@ -4,35 +4,41 @@ import React from "react";
 const Services = () => {
   const services = [
     {
-      name: "Procurement",
+      name: "FarmKonekt Purchaser",
       image: "/assets/images/procurement.png",
-      link: "/",
+      link: "https://purchaser.farmkonek.com",
+    },
+    {
+      name: "FarmKonekt Supplier",
+      image: "/assets/images/supplier.png",
+      link: "https://supplier.farmkonek.com/",
+    },
+    {
+      name: "FarmKonekt Pre-enrollment",
+      image: "/assets/images/enroll.png",
+      link: " https://app.farmkonek.com/",
     },
     {
       name: "Cluster Management",
       image: "/assets/images/team.png",
-      link: "/",
+      link: "https://crm.farmkonek.com/",
     },
+
     {
-      name: "Supplier Portal",
-      image: "/assets/images/supplier.png",
-      link: "/",
-    },
-    {
-      name: "Mobile Apps",
-      image: "/assets/images/mobile-app.png",
-      link: "/",
+      name: "FarmKonekt Facebook ",
+      image: "/assets/images/facebook.png",
+      link: "https://www.facebook.com/FarmKonek",
     },
     {
       name: "Farmkonekt Website",
       image: "/assets/images/ux.png",
-      link: "/",
+      link: "https://farmkonek.com/",
     },
   ];
   return (
     <div className="w-full ">
       <p className="text-2xl font-bold mb-6">Services</p>
-      <div className=" w-full flex flex-wrap gap-6 ">
+      <div className=" w-full flex flex-wrap gap-4 lg:gap-6 ">
         {services.map((service: any, index: number) => (
           <Link href={service.link} key={index}>
             <button
@@ -41,7 +47,7 @@ const Services = () => {
             >
               <img
                 src={service.image}
-                className="h-[90px] w-auto object-contain mx-auto"
+                className="h-[80px] w-auto object-contain mx-auto"
               />
               <p className="font-semibold text-md text-center ">
                 {service.name}
