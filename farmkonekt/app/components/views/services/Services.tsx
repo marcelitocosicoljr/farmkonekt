@@ -42,14 +42,14 @@ const Services = () => {
         {services.map((service: any, index: number) => (
           <Link href={service.link} key={index}>
             <button
-              className="w-[180px] h-[170px] p-4 bg-fk-white rounded-lg flex flex-col justify-center items-center gap-4
-        hover:scale-105 duration-150 hover:bg-[#F5F5F6] hover:text-fk-green hover:shadow-xl"
+              className="w-[155px] md:w-[180px] h-[170px] p-4 bg-fk-white rounded-lg flex flex-col justify-center items-center gap-4
+        hover:scale-105 duration-150 hover:bg-[#F5F5F6] text-fk-black  hover:text-fk-green hover:shadow-xl"
             >
               <img
                 src={service.image}
-                className="h-[80px] w-auto object-contain mx-auto"
+                className="h-[60px] lg:h-[80px] w-auto object-contain mx-auto"
               />
-              <p className="font-semibold text-md text-center ">
+              <p className="font-semibold  text-md text-center ">
                 {service.name}
               </p>
             </button>
